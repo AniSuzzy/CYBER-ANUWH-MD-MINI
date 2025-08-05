@@ -1,7 +1,7 @@
 {
-  "name": "HASHAN-md",
+  "name": "CYBER-ANUWH-MD-MINI",
   "version": "1.0.0",
-  "description": "HASHAN-MD WhatsApp Bot with Multi-Number Support",
+  "description": "ANUWH MD MINI WhatsApp Bot with Multi-Number Support",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
