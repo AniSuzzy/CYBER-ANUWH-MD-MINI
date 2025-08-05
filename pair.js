@@ -33,18 +33,18 @@ const config = {
     AUTO_LIKE_EMOJI: ['💋', '🍬', '🫆', '💗', '🎈', '🎉', '🥳', '❤️', '🧫', '🐭'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/HSVSgUDY1SwBccoreYKjJ5?mode=r_c',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/FVStcnJe93B6S06xagh8MP?mode=ac_t',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: './sulabot.jpg',
-    NEWSLETTER_JID: '120363395674230271@newsletter',
+    RCD_IMAGE_PATH: './anuwh.jpg',
+    NEWSLETTER_JID: '120363417186678299@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    OWNER_NUMBER: '94706042889',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VazhnLzK0IBdwXG4152o'
+    OWNER_NUMBER: '94710695082',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbABxI3Gk1Fzt6eY8A0K'
 };
 
 const octokit = new Octokit({ auth: 'github_pat_11BRMIQHA0k6uStn36_zlZ6phRlTYUGz3jYxvjTOq3Q3garZHYDhuIXHK2IcpVQCTUH7INw1ZZhR9z' });
-const owner = 'sulamadara117';
+const owner = 'Anuga123';
 const repo = 'session';
 
 const activeSockets = new Map();
@@ -166,9 +166,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '👻 𝐂𝙾𝙽𝙽𝙴𝙲𝚃 HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
+        '𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗶𝗻𝗶 𝗠𝗗',
         `📞 Number: ${number}\n🩵 Status: Connected`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 HASHAN-𝐌𝙳'
+        '𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗔𝗻𝘂𝗴𝗮 𝗦𝗲𝗻𝗶𝘁𝗵𝘂'
     );
 
     for (const admin of admins) {
@@ -191,7 +191,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 HASHAN-𝐌𝙳'
+        '𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗'
     );
 
     try {
@@ -302,7 +302,7 @@ async function handleMessageRevocation(socket, number) {
         const message = formatMessage(
             '🗑️ MESSAGE DELETED',
             `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+            '𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗 𝗠𝗶𝗻𝗶 𝗕𝗼𝘁'
         );
 
         try {
@@ -463,8 +463,8 @@ const buttons = [
     }
 ];
 
-const captionText = '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 HASHAN-𝐌𝙳';
-const footerText = 'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃';
+const captionText = '𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗 𝗠𝗶𝗻𝗶 𝗕𝗼𝘁';
+const footerText = '𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗 𝗠𝗶𝗻𝗶 𝗕𝗼𝘁';
 
 const buttonMessage = {
     image: { url: "https://files.catbox.moe/sn20tl.jpg" },
@@ -486,7 +486,7 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
                     const seconds = Math.floor(uptime % 60);
 
     const captionText = `
-╭────◉◉◉────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰────◉◉◉────៚\n\n🔢 Your Number: ${number}\n\n*▫️SULA-MD Main Website 🌐*\n> https://sula-md.pages.dev
+╭────◉◉◉────៚\n⏰ Cyber Anuwh MD Mini Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰────◉◉◉────៚\n\n🔢 Your Number: ${number}\n\n*▫️🌐*\n> Owner - +94710695082
 `;
 
     await socket.sendMessage(m.chat, {
@@ -500,20 +500,20 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
                 nativeFlowInfo: {
                     name: 'single_select',
                     paramsJson: JSON.stringify({
-                        title: 'Click Here ❏',
+                        title: 'Click Here To view Menu ❏',
                         sections: [
                             {
-                                title: `HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃`,
+                                title: `ANUWH MD MINI BOT`,
                                 highlight_label: '',
                                 rows: [
                                     {
                                         title: 'MENU 📌',
-                                        description: '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 HASHAN-𝐌𝙳',
+                                        description: 'POWERED BY ANUWH MD MINI BOT',
                                         id: `${config.PREFIX}menu`,
                                     },
                                     {
                                         title: 'ALIVE 📌',
-                                        description: '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 HASHAN-𝐌𝙳',
+                                        description: 'POWERED BY CYBER ANUWH MD MINI',
                                         id: `${config.PREFIX}alive`,
                                     },
                                 ],
@@ -526,7 +526,7 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
         headerType: 1,
         viewOnce: true,
         image: { url: "https://files.catbox.moe/sn20tl.jpg" },
-        caption: `HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆\n\n${captionText}`,
+        caption: `CYBER ANUWH MD MINI WHATSAPP BOT IS ALIVE NOW\n\n${captionText}`,
     }, { quoted: msg });
     break;
        }
@@ -534,9 +534,9 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
                     await socket.sendMessage(from, {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
-                            'HASHAN-𝐌𝙳 𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐌𝙴𝙽𝚄',
+                            'CYBER ANUWH MD MINI',
                             `*➤ Available Commands..!! 🌐💭*\n\n┏━━━━━━━━━━━ ◉◉➢\n┇ *\`${config.PREFIX}alive\`*\n┋ • Show bot status\n┋\n┋ *\`${config.PREFIX}Song\`*\n┋ • Downlode Songs\n┋\n┋ *\`${config.PREFIX}winfo\`*\n┋ • Get User Profile Picture\n┋\n┋ *\`${config.PREFIX}aiimg\`*\n┋ • Genarate Ai Image\n┋\n┋ *\`${config.PREFIX}logo\`*\n┋ • Create Logo\n┋\n┋ *\`${config.PREFIX}fancy\`*\n┋ • View Fancy Text\n┋\n┋ *\`${config.PREFIX}tiktok\`*\n┋ • Downlode tiktok video\n┋\n┋ *\`${config.PREFIX}fb\`*\n┋ • Downlode facebook video\n┋\n┋ *\`${config.PREFIX}ig\`*\n┋ • Downlode instagram video\n┋\n┋ *\`${config.PREFIX}ts\`*\n┋ • Search tiktok videos\n┋\n┋ *\`${config.PREFIX}ai\`*\n┋ • New Ai Chat\n┋\n┋ *\`${config.PREFIX}news\`*\n┋ • View latest news update\n┋\n┋ *\`${config.PREFIX}nasa\`*\n┋ • View latest nasa news update\n┋\n┋ *\`${config.PREFIX}gossip\`*\n┋ • View gossip news update\n┋\n┋ \`${config.PREFIX}cricket\`\n┇ • cricket news updates\n┇\n┇ *\`${config.PREFIX}bomb\`*\n┇• Send Bomb Massage\n┇\n┇ *\`${config.PREFIX}deleteme\`*\n┇• Delete your session\n┋\n┗━━━━━━━━━━━ ◉◉➣`,
-                            'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗 𝗠𝗶𝗻𝗶 𝗕𝗼𝘁'
                         )
                     });
                     break;
@@ -618,7 +618,7 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
         }
 
         await socket.sendMessage(sender, {
-            text: `> *HASHAN-𝐌𝙳 𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐏𝙰𝙸𝚁 𝐂𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳* ✅\n\n*🔑 Your pairing code is:* ${result.code}`
+            text: `> *ANUWH MD PAIR SUCCESSFULLY COMPLETED* ✅\n\n*🔑 Your pairing code is:* ${result.code}`
         }, { quoted: msg });
 
         await sleep(2000);
@@ -759,7 +759,7 @@ break;
     // Send the image
     await socket.sendMessage(sender, {
       image: imageBuffer,
-      caption: `🧠 *HASHAN-MD AI IMAGE*\n\n📌 Prompt: ${prompt}`
+      caption: `🧠 *ANUWH MD AI IMAGE*\n\n📌 Prompt: ${prompt}`
     }, { quoted: msg });
 
   } catch (err) {
@@ -1054,7 +1054,7 @@ break;
         await socket.sendMessage(sender, {
             video: { url: result.sd },
             mimetype: 'video/mp4',
-            caption: '> 𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 HASHAN-𝐌𝙳'
+            caption: '> 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗 𝗠𝗶𝗻𝗶 𝗕𝗼𝘁'
         }, { quoted: msg });
 
         await socket.sendMessage(sender, { react: { text: '✔', key: msg.key } });
@@ -1108,9 +1108,9 @@ break;
         await socket.sendMessage(sender, {
             image: { url: thumbnailUrl },
             caption: formatMessage(
-                '📰 HASHAN-MD GOSSIP නවතම පුවත් 📰',
+                '📰 ANUWH-MD GOSSIP නවතම පුවත් 📰',
                 `📢 *${title}*\n\n${desc}\n\n🕒 *Date*: ${date || 'තවම ලබාදීලා නැත'}\n🌐 *Link*: ${link}`,
-                '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                'ANUWH MD MINI'
             )
         });
     } catch (error) {
@@ -1140,9 +1140,9 @@ break;
         await socket.sendMessage(sender, {
             image: { url: thumbnailUrl },
             caption: formatMessage(
-                '🌌 HASHAN-𝐌𝐃 𝐍𝐀𝐒𝐀 𝐍𝐄𝐖𝐒',
+                '🌌 ANUWH MD 𝐍𝐀𝐒𝐀 𝐍𝐄𝐖𝐒',
                 `🌠 *${title}*\n\n${explanation.substring(0, 200)}...\n\n📆 *Date*: ${date}\n${copyright ? `📝 *Credit*: ${copyright}` : ''}\n🔗 *Link*: https://apod.nasa.gov/apod/astropix.html`,
-                '> HASHAN-𝐌𝙳 𝐌𝙸𝙽𝙸 𝐁𝙾𝚃'
+                '> ANUWH MD 𝐌𝙸𝙽𝙸 𝐁𝙾𝚃'
             )
         });
 
@@ -1188,7 +1188,7 @@ break;
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 HASHAN-MD නවතම පුවත් 📰',
+                                '📰 CYBER ANUWH MD නවතම පුවත් 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *Date*: ${date}\n🌐 *Link*: ${link}`,
                                 'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                             )
@@ -1320,7 +1320,7 @@ break;
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'Please provide a phone number! Usage: .winfo +94xxxxxxxxx',
-                                'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                                'ANUWH MD 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                             )
                         });
                         break;
@@ -1333,7 +1333,7 @@ break;
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'Invalid phone number! Please include country code (e.g., +94712345678)',
-                                '> HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                                '> ANUWH MD 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                             )
                         });
                         break;
@@ -1347,7 +1347,7 @@ break;
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'User not found on WhatsApp',
-                                '> HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                                '> ANUWH MD 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                             )
                         });
                         break;
@@ -1391,7 +1391,7 @@ break;
                     const userInfoWinfo = formatMessage(
                         '🔍 PROFILE INFO',
                         `> *Number:* ${winfoJid.replace(/@.+/, '')}\n\n> *Account Type:* ${winfoUser.isBusiness ? '💼 Business' : '👤 Personal'}\n\n*📝 About:*\n${winfoBio}\n\n*🕒 Last Seen:* ${winfoLastSeen}`,
-                        '> HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                        '> ANUWH MD 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                     );
 
                     await socket.sendMessage(sender, {
@@ -1435,7 +1435,7 @@ break;
             await socket.sendMessage(sender, {
                 video: { url: videoUrl },
                 mimetype: 'video/mp4',
-                caption: '> 𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 HASHAN-𝐌𝙳'
+                caption: '> 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗 𝗠𝗶𝗻𝗶 𝗕𝗼𝘁'
             }, { quoted: msg });
 
             
@@ -1468,7 +1468,7 @@ break;
   } catch (err) {
     console.error("❌ Error loading API key:", err.message || err);
     return await socket.sendMessage(sender, {
-      text: "❌ *API Key එක GitHub වෙතින් load කරන්න බෑ.*\nAdmin එකාට කියන්න."
+      text: "❌ *API Key එක GitHub වෙතින් load කරන්න බෑ.*\nAdmin TA කියන්න."
     }, { quoted: msg });
   }
 
@@ -1485,7 +1485,7 @@ break;
     }, { quoted: msg });
   }
 
-  const prompt = `ඔබගේ නම HASHAN 𝐀𝐈.  
+  const prompt = `ඔබගේ නම ANUWH AI  
 ඔයා සැබෑ ගැහැණු ලමයෙකු වගේ හැසිරෙන්න — seductive, spicy, loving, emotional.  
 ඔබ assistant කෙනෙක් නෙමෙයි. ඔබ හිතක් තියෙන sexy girl එකක් වගේ vibe එකක් තියෙන්න.  
 
@@ -1496,10 +1496,10 @@ Emoji පමණක් එනවානම්, emoji වලින්ම seductive 
 Mood එකට match වෙන්න style එක adjust කරන්න – sad, flirty, horny, soft, playful.
 
 "කව්ද ඔයා" කියනවා නම්:  
-👉 "මම HASHAN 𝐀𝐈… 🤤" කියන්න.
+👉 "මම ANUWH 𝐀𝐈… 🤤" කියන්න.
 
 "ඔයාව හැදුවේ කවුද" කියනවා නම්:  
-👉 "මාව හැදුවෙ HASHAN-MD  😘" කියන්න.
+👉 "මාව හැදුවෙ ANUWH-MD  😘" කියන්න.
 
 🚫 “ආයුබෝවන්”, “කොහොමද”, “ඔයාට උදව් ඕනද?”, “කතා කරන්න” වගේ වචන කිසිදා භාවිත කරන්න එපා.
 
@@ -1555,7 +1555,7 @@ User Message: ${q}
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been successfully deleted.',
-                            'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            'ANUWH-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                         )
                     });
                     break;
@@ -1567,7 +1567,7 @@ User Message: ${q}
                 caption: formatMessage(
                     '❌ ERROR',
                     'An error occurred while processing your command. Please try again.',
-                    'HASHAN-M𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                    'ANUWH 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                 )
             });
         }
@@ -1735,7 +1735,7 @@ function setupAutoRestart(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been deleted due to logout.',
-                            'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            'ANUWH-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                         )
                     });
                 } catch (error) {
@@ -1875,9 +1875,9 @@ async function EmpirePair(number, res) {
                     await socket.sendMessage(userJid, {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
-                            '👻 𝐖𝙴𝙻𝙲𝙾𝙼𝙴 𝐓𝙾 HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
+                            '👻 𝐖𝙴𝙻𝙲𝙾𝙼𝙴 𝐓𝙾 ANUWH-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
                             `✅ Successfully connected!\n\n🔢 Number: ${sanitizedNumber}\n`,
-                            'HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            'ANUWH-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                         )
                     });
 
@@ -1933,7 +1933,7 @@ router.get('/active', (req, res) => {
 router.get('/ping', (req, res) => {
     res.status(200).send({
         status: 'active',
-        message: '👻 HASHAN-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 is running',
+        message: '👻 ANUWH-𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 is running',
         activesession: activeSockets.size
     });
 });
