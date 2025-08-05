@@ -23,7 +23,7 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`
 Don't Forget To Give Star ‼️
 
-𝐏𝙾𝚆𝙴𝚁𝙴𝙳 𝐁𝚈 HASHAN-𝐌𝙳
+𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗖𝘆𝗯𝗲𝗿 𝗔𝗻𝘂𝘄𝗵 𝗠𝗗 𝗠𝗶𝗻𝗶 𝗕𝗼𝘁
 
 Server running on http://0.0.0.0:` + PORT);
 });
